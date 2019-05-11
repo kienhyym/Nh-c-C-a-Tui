@@ -1,0 +1,52 @@
+.body{
+	    font-family: 'NhacCuaTui',sans-serif;
+}
+.NgheGiHomNay{
+	width: 152px;
+
+}
+.NGHN{
+	width: 152px;
+	height: 152px;
+	background-image: url("https://loremflickr.com/152/152/dog");
+	position: relative;	
+}
+.NGHN-view-count{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.NGHN .NGHN-gradient .fa-2x{
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 152px;
+	transition: all 0.5s;
+	transition:scale(0.2);
+
+}
+.NGHN:hover.NGHN .NGHN-gradient .fa-2x{
+	opacity: 1;
+	background: radial-gradient(circle, rgba(0,0,0,0.4514180672268907) 0%, rgba(0,0,0,0.45) 100%);
+	transition:scale(1);
+	color: white;
+}
+.NGHN-view-count{
+	background: linear-gradient(270deg, rgba(0,0,0,0.7679446778711485) 0%, rgba(0,0,0,0) 100%);
+	color: white;
+	font-size:12px;
+	padding: 5px;
+}
+.fa-headphones-alt{
+	margin-right: 3px;
+	font-size: 10px;
+}
+.NGHN-tittle a{
+	text-decoration: none;
+	color: black;
+}
+.NGHN-tittle a:hover{
+	color: #2daaed;
+}

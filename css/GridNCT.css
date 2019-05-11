@@ -1,0 +1,10 @@
+.layout{
+	display: grid;
+	grid-template-columns:10% 60% 20% 10%: 
+}
+.header{
+	grid-column:1/5;
+}
+.footer{
+	grid-column: 1/5;
+}

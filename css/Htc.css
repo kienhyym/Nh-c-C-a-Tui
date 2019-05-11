@@ -1,0 +1,89 @@
+body{
+	
+	text-align: center;
+	margin: 0 auto;
+	font-stretch: condensed;
+	font-family: 'Roboto',Helvetica,Arial,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+/*style phan tren cua web*/
+.topWeb{
+	border-bottom: 1px solid #e2dada; 
+}
+/*Style nut  bai hat*/
+li{
+	list-style: none;
+}
+.menu{
+	margin: 0 10%;
+	display: flex;
+	list-style: none;
+	padding: 0%;
+	
+	font-size: 14px;
+}
+.menu li{
+	padding: 12px 8px;
+	color: #3a3535;
+	display: flex;
+	align-items:center;
+	
+}
+.menu li a{
+	text-decoration:none;
+	color: #3a3535;
+	
+	
+}
+.menu li a:hover{
+	color:#3dc7f1;
+}	
+.menu-baihat{
+	position: relative;
+}
+.menu-con-baihat{
+	display: flex;
+	position:absolute;
+	padding-left: 0px; 
+	border: 1px solid #e2dada;
+	list-style: none;
+	width: 550px;
+	text-align: left;
+	box-shadow: 0 0 3pt 2pt #efefef;
+	top: 49px;
+	display: none;
+
+}
+.menu-con-baihat-vietnam ul{
+	padding-left: 15px;
+}
+.menu-con-baihat-vietnam ul li{
+	text-align: left;
+	width: 100px;
+	padding: 10px;
+}
+
+
+.menu-baihat:hover .menu-con-baihat{
+	display: flex;
+	background-color: white;
+}
+.menu-con-baihat-vietnam ul li:first-of-type{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/*Style icon-menu*/
+.icon-menu{
+	width: 40px;
+	display: flex;
+	justify-content: center;
+}
+.DanhSach{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly; 	
+			box-sizing: border-box;
+		}
+
+
