@@ -1,0 +1,42 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	width: 300px;
+	outline: 0px;
+}
+.imgSlideRight{
+	display: none;
+}
+.titleSLideRight{
+	background-image: url("https://image.freepik.com/vetores-gratis/colorido-fundo-abstratos-som-onda_23-2147622442.jpg");
+	background-size: cover;
+ 	background-position: center;
+	color: white;
+	height: 120px;
+	width: 300px;
+	position: relative;
+	bottom: 6px;
+	font-family: 'Maven Pro', sans-serif;
+	text-transform: capitalize;
+}
+
+.SingNew{
+	font-size: 28px;
+	position: absolute;
+	left: 25px;
+	top:18px;
+
+}
+.coming{
+	font-size: 14px;
+	position: absolute;
+	left: 25px;
+	top:10px;
+	}
+.choose{
+	border: 1px solid black;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+}

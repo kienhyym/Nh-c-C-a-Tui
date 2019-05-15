@@ -3,22 +3,17 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./css/GridNCT.css">
-	<link rel="stylesheet" type="text/css" href="./css/Htc.css">
-	<link rel="stylesheet" type="text/css" href="./css/topSongaWeek.css">
+	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/NCT-Slide-newhot.css">
-	<link rel="stylesheet" type="text/css" href="./css/NgheGiHomNay.css">
-	<style type="text/css">
-		.DanhSach{
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly; 	
-			box-sizing: border-box;
-		}
-		
-	</style>
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/SLIDE.css">
+	<link rel="stylesheet" type="text/css" href="./css/NGHEGIHOMNAY.css">
+	<link rel="stylesheet" type="text/css" href="./css/GRID.css">
+	<link rel="stylesheet" type="text/css" href="./css/MENU.css">
+	<link rel="stylesheet" type="text/css" href="./css/BXH-BAIHAT.css">
+	<link rel="stylesheet" type="text/css" href="./css/SLIDERIGHT.css">
 </head>
 <body>
 
@@ -260,6 +255,60 @@
 
 
 <!-- RIGHTER -->
+<!-- ...................................................................	 -->
+		<div id="slideRight">
+		<div  class="imgSlideRight">
+			<img  src="./photo/slideRight1.jpg">
+			<div class="titleSLideRight">
+				<p class="coming"><b>COMING SOON</b></p>
+				<p class="SingNew">Yêu đi đừng lo xa</p>
+			</div>
+		</div>
+		<div class="imgSlideRight">
+			<img   src="./photo/slideRight2.jpg">
+			<div class="titleSLideRight">
+				<p class="coming"><b>COMING SOON</b></p>
+				<p class="SingNew">Xa một trời thương nhớ</p>
+			</div>
+		</div>
+		<div  class="imgSlideRight">
+			<img  src="./photo/slideRight3.jpg">
+			<div class="titleSLideRight">
+				<p class="coming"><b>COMING SOON</b></p>
+				<p class="SingNew">Cây đàn xinh viên</p>
+			</div>
+		</div>
+	</div>
+	<!-- <input type="radio" name="">
+	<input type="radio" name="">
+	<input type="radio" name=""> -->
+	
+	
+
+	<script type="text/javascript">
+		var indexUp =0;
+			function showSlideRight(){
+				
+				var arr = [];
+				$('.imgSlideRight').each(function(){
+					arr.push($(this));
+					$('.imgSlideRight').css('display','none');
+				});
+				arr[indexUp].css('display','block');
+				console.log(indexUp);
+				indexUp++;
+				if(indexUp > arr.length-1){
+					indexUp = 0;
+				}				
+				setTimeout(showSlideRight, 2000);
+			}
+		showSlideRight();
+	</script>
+
+<!-- 	................................................................ -->
+	
+
+	<br>
 	<div class="righter">
 		<div class="top-song-a-week">
 			<div class="image-song-top-week">

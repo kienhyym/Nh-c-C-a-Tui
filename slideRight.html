@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/SLIDERIGHT.css">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div id="slideRight">
+		<div  class="imgSlideRight">
+			<img  src="./photo/slideRight1.jpg">
+			<div class="titleSLideRight">
+				<p class="coming"><b>COMING SOON</b></p>
+				<p class="SingNew">Yêu đi đừng lo xa</p>
+			</div>
+		</div>
+		<div class="imgSlideRight">
+			<img   src="./photo/slideRight2.jpg">
+			<div class="titleSLideRight">
+				<p class="coming"><b>COMING SOON</b></p>
+				<p class="SingNew">Xa một trời thương nhớ</p>
+			</div>
+		</div>
+		<div  class="imgSlideRight">
+			<img  src="./photo/slideRight3.jpg">
+			<div class="titleSLideRight">
+				<p class="coming"><b>COMING SOON</b></p>
+				<p class="SingNew">Cây đàn xinh viên</p>
+			</div>
+		</div>
+	</div>
+	<input type="radio" name="">
+	<input type="radio" name="">
+	<input type="radio" name="">
+	
+	
+
+	<script type="text/javascript">
+		var indexUp =0;
+			function showSlideRight(){
+				
+				var arr = [];
+				$('.imgSlideRight').each(function(){
+					arr.push($(this));
+					$('.imgSlideRight').css('display','none');
+				});
+				arr[indexUp].css('display','block');
+				console.log(indexUp);
+				indexUp++;
+				if(indexUp > arr.length-1){
+					indexUp = 0;
+				}				
+				setTimeout(showSlideRight, 2000);
+			}
+		showSlideRight();
+	</script>
+</body>
+</html>
