@@ -8,19 +8,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-	<link rel="stylesheet" type="text/css" href="./css/SLIDE.css">
-	<link rel="stylesheet" type="text/css" href="./css/NGHEGIHOMNAY.css">
 	<link rel="stylesheet" type="text/css" href="./css/GRID.css">
 	<link rel="stylesheet" type="text/css" href="./css/MENU.css">
-	<link rel="stylesheet" type="text/css" href="./css/BXH-BAIHAT.css">
 	<link rel="stylesheet" type="text/css" href="./css/SLIDERIGHT.css">
+	
 </head>
 <body>
 
 <div class="layout">	
-<!-- HEADER -->
+	<!-- HEADER -->
 	<div class="header">
-		
 		<div class="topWeb">
 			<ul class="menu">
 				<li><a href="#"><img src="./photo/NCT.png" style="width: 65px; height: 32px;"></a></li>
@@ -75,258 +72,81 @@
 				<li class="icon-menu"><a href="#"><i class="fas fa-cloud-upload-alt fa-lg"></i></a></li>
 			</ul>
 		</div>
+	</div>		
+<!-- ..................................... -->
 
-	</div>
-<!-- MARGIN LEFT  -->	
-<div class="marginLeft"> MARRGIN LEFT </div>
-<!-- LEFTER -->
-	<div class="lefter ">
-		
-		<div class="slideTopHotNew">
-			<div class="slideshow-container">
-				<div class="mySlides fade" >
-					<img src="./photo/slide1.jpg" style="width:100%">
 
-				</div>
-				<div  class="mySlides fade">
-					<img src="./photo/slide2.jpg" style="width:100%">
-				</div>
-				<div class="mySlides fade">
-					<img  src="./photo/slide3.jpg" style="width:100%">
-				</div>
-				<div class="mySlides fade">
-					<img  src="./photo/slide4.jpg" style="width:100%">
-				</div>
-				<div class="mySlides fade">
-					<img  src="./photo/slide5.jpg" style="width:100%">
-				</div>
+
+	<!-- MARGIN LEFT  -->	
+	<div class="marginLeft"></div>
+<!-- ..................................... -->
+
+
+
+	<!-- LEFTER -->
+	<div class="Lefter">
+		<div class="out">
+			<div id="slideRight">
 				
-			</div>
-			<div class="chose">
-				<img class="dot" src="./photo/slide1.jpg" onclick="currentSlide(0)">
-				<img class="dot" src="./photo/slide2.jpg" onclick="currentSlide(1)">
-				<img class="dot" src="./photo/slide3.jpg" onclick="currentSlide(2)">
-				<img class="dot" src="./photo/slide4.jpg" onclick="currentSlide(3)">
-				<img class="dot" src="./photo/slide5.jpg" onclick="currentSlide(4)">
-			</div>
-
-
-		</div>
-
-			<script>
-			  //khai báo biến slideIndex đại diện cho slide hiện tại
-			  var slideIndex;
-			  // KHai bào hàm hiển thị slide
-				function showSlides() {
-			      	var i;
-			      	var slides = document.getElementsByClassName("mySlides");
-			      	var dots = document.getElementsByClassName("dot");
-			      	for (i = 0; i < slides.length; i++) {
-			         	slides[i].style.display = "none";  
-			     	}
-			      	for (i = 0; i < dots.length; i++) {
-			          	dots[i].className = dots[i].className.replace("active", "");
-			          	console.log(dots[i].className);   
-			          	   	}
-			 
-			      	slides[slideIndex].style.display = "block";  
-			      	dots[slideIndex].className = dots[slideIndex].className + " active";
-			      	console.log(dots[slideIndex].className);
-
-			      	//chuyển đến slide tiếp theo
-			      	slideIndex++;
-			      	//nếu đang ở slide cuối cùng thì chuyển về slide đầu
-			      	if (slideIndex > slides.length - 1) {
-			        slideIndex = 0
-			      	}    
-			      	//tự động chuyển đổi slide sau 5s
-			      	setTimeout(showSlides, 5000);
-			  	}
-			 	//mặc định hiển thị slide đầu tiên 
-				showSlides(slideIndex = 0);
-			 	
-			 
-			  	function currentSlide(n) {
-			    	showSlides(slideIndex = n);
-			  	}
-			</script>
-
-		<div><p style="text-align: left; font-size: 24px; margin: 15px 0px; color: #2daaed;" >NGHE GÌ HÔM NAY ></p></div>
-
-		<div class="DanhSach">
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-		</div>	
-	<!-- 	MỚi PHÁT HÀNH -->
-	<div><p style="text-align: left; font-size: 24px; margin: 15px 0px; color: #2daaed;" >MỚi PHÁT HÀNH ></p></div>
-
-		<div class="DanhSach">
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-			<div class="NgheGiHomNay">	
-				<div class="NGHN">
-					<div class="NGHN-gradient">
-						<i class="far fa-play-circle fa-2x"></i>
-				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
-					</div> 	
-				</div>
-				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
-			</div>
-		</div>
 			
-	</div>
+				<input type="radio" name="radioSlide" id="radioSlide1" value="1">
+				<label for="radioSlide1"><img src="./photo/slide1.jpg"></label>
+				<img src="./photo/slide1.jpg" class="picture">
 
+				<input type="radio" name="radioSlide" id="radioSlide2" value="2">
+				<label for="radioSlide2"><img src="./photo/slide2.jpg"></label>
+				<img src="./photo/slide2.jpg" class="picture">
 
-<!-- RIGHTER -->
-<!-- ...................................................................	 -->
-		<div id="slideRight">
-		<div  class="imgSlideRight">
-			<img  src="./photo/slideRight1.jpg">
-			<div class="titleSLideRight">
-				<p class="coming"><b>COMING SOON</b></p>
-				<p class="SingNew">Yêu đi đừng lo xa</p>
+				<input type="radio" name="radioSlide" id="radioSlide3" value="3">
+				<label for="radioSlide3"><img src="./photo/slide3.jpg"></label>
+				<img src="./photo/slide3.jpg" class="picture">
+
+				<input type="radio" name="radioSlide" id="radioSlide4" value="4">
+				<label for="radioSlide4"><img src="./photo/slide4.jpg"></label>
+				<img src="./photo/slide4.jpg" class="picture">
+
 			</div>
 		</div>
-		<div class="imgSlideRight">
-			<img   src="./photo/slideRight2.jpg">
-			<div class="titleSLideRight">
-				<p class="coming"><b>COMING SOON</b></p>
-				<p class="SingNew">Xa một trời thương nhớ</p>
-			</div>
-		</div>
-		<div  class="imgSlideRight">
-			<img  src="./photo/slideRight3.jpg">
-			<div class="titleSLideRight">
-				<p class="coming"><b>COMING SOON</b></p>
-				<p class="SingNew">Cây đàn xinh viên</p>
-			</div>
-		</div>
-	</div>
-	<!-- <input type="radio" name="">
-	<input type="radio" name="">
-	<input type="radio" name=""> -->
-	
-	
+			<script type="text/javascript">
+			
+				var indexUp = 0;
+				 var slides = document.getElementsByTagName("input");
+					function showSlideRight(){	
+						
+						slides[indexUp].checked = true;
 
-	<script type="text/javascript">
-		var indexUp =0;
-			function showSlideRight(){
+						indexUp++;
+						if(indexUp >slides.length-1){
+							indexUp = 0;
+						}
+						
+						setTimeout(showSlideRight,2000);
+						
+					}
+				showSlideRight();
 				
-				var arr = [];
-				$('.imgSlideRight').each(function(){
-					arr.push($(this));
-					$('.imgSlideRight').css('display','none');
-				});
-				arr[indexUp].css('display','block');
-				console.log(indexUp);
-				indexUp++;
-				if(indexUp > arr.length-1){
-					indexUp = 0;
-				}				
-				setTimeout(showSlideRight, 2000);
-			}
-		showSlideRight();
-	</script>
-
-<!-- 	................................................................ -->
-	
-
-	<br>
-	<div class="righter">
-		<div class="top-song-a-week">
-			<div class="image-song-top-week">
-				<div class="gradient-song-top-week">
-					<i class="far fa-play-circle fa-2x"></i>
-					<span>02</span>
-				</div>
+			</script>
 			</div>
-			<div class="infomation-song-top-week">
-				<div class="name-song-top-week">Đồ nói dối</div>
-				<div class="name-singer-top-week">Addy Trần</div>
-			</div>	
-		</div>
-	</div>
-<!-- 	MARGIN RIGHT -->
-<div class="marginRight">marginRight</div>
-<!-- FOOTER -->
+<!-- ..................................... -->	
+
+
+
+
+	<!-- RIGHTER -->
+	<div class="Righter"></div>
+<!-- ..................................... -->	
+
+
+
+	<!-- 	MARGIN RIGHT -->
+	<div class="marginRight"></div>
+<!-- ..................................... -->	
+
+
+
+	<!-- FOOTER -->
 	<div class="footer">footer</div>
+<!-- ..................................... -->
 </div>
 
 

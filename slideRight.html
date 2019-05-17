@@ -8,53 +8,46 @@
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
+<div class="out">
 	<div id="slideRight">
-		<div  class="imgSlideRight">
-			<img  src="./photo/slideRight1.jpg">
-			<div class="titleSLideRight">
-				<p class="coming"><b>COMING SOON</b></p>
-				<p class="SingNew">Yêu đi đừng lo xa</p>
-			</div>
-		</div>
-		<div class="imgSlideRight">
-			<img   src="./photo/slideRight2.jpg">
-			<div class="titleSLideRight">
-				<p class="coming"><b>COMING SOON</b></p>
-				<p class="SingNew">Xa một trời thương nhớ</p>
-			</div>
-		</div>
-		<div  class="imgSlideRight">
-			<img  src="./photo/slideRight3.jpg">
-			<div class="titleSLideRight">
-				<p class="coming"><b>COMING SOON</b></p>
-				<p class="SingNew">Cây đàn xinh viên</p>
-			</div>
-		</div>
-	</div>
-	<input type="radio" name="">
-	<input type="radio" name="">
-	<input type="radio" name="">
+		
 	
-	
+		<input type="radio" name="radioSlide" id="radioSlide1" value="1">
+		<label for="radioSlide1"><img src="./photo/slide1.jpg"></label>
+		<img src="./photo/slide1.jpg" class="picture">
 
+		<input type="radio" name="radioSlide" id="radioSlide2" value="2">
+		<label for="radioSlide2"><img src="./photo/slide2.jpg"></label>
+		<img src="./photo/slide2.jpg" class="picture">
+
+		<input type="radio" name="radioSlide" id="radioSlide3" value="3">
+		<label for="radioSlide3"><img src="./photo/slide3.jpg"></label>
+		<img src="./photo/slide3.jpg" class="picture">
+
+		<input type="radio" name="radioSlide" id="radioSlide4" value="4">
+		<label for="radioSlide4"><img src="./photo/slide4.jpg"></label>
+		<img src="./photo/slide4.jpg" class="picture">
+
+	</div>
+</div>
 	<script type="text/javascript">
-		var indexUp =0;
-			function showSlideRight(){
+	
+		var indexUp = 0;
+		 var slides = document.getElementsByTagName("input");
+			function showSlideRight(){	
 				
-				var arr = [];
-				$('.imgSlideRight').each(function(){
-					arr.push($(this));
-					$('.imgSlideRight').css('display','none');
-				});
-				arr[indexUp].css('display','block');
-				console.log(indexUp);
+				slides[indexUp].checked = true;
+
 				indexUp++;
-				if(indexUp > arr.length-1){
+				if(indexUp >slides.length-1){
 					indexUp = 0;
-				}				
-				setTimeout(showSlideRight, 2000);
+				}
+				
+				setTimeout(showSlideRight,2000);
+				
 			}
 		showSlideRight();
+		
 	</script>
 </body>
 </html>

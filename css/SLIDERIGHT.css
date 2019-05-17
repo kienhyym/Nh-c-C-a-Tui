@@ -1,42 +1,38 @@
-body{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	width: 300px;
-	outline: 0px;
+.out{
+	width: 840px;
+	border :1px solid red;
+	height: 430px;
 }
-.imgSlideRight{
+#slideRight{
+	width: 842px;
+	position: relative;
+	padding-top: 341px;
+}
+#slideRight > img{
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+#slideRight label img{
+	width: :150px;
+	height: 70px;
+	display: block;
+}
+input[name='radioSlide']{
 	display: none;
 }
-.titleSLideRight{
-	background-image: url("https://image.freepik.com/vetores-gratis/colorido-fundo-abstratos-som-onda_23-2147622442.jpg");
-	background-size: cover;
- 	background-position: center;
-	color: white;
-	height: 120px;
-	width: 300px;
-	position: relative;
-	bottom: 6px;
-	font-family: 'Maven Pro', sans-serif;
-	text-transform: capitalize;
+#slideRight label{
+	margin: 18px 18px 0px 0px ;
+	float: left;
+	cursor: pointer;
+	opacity: .6;
 }
-
-.SingNew{
-	font-size: 28px;
-	position: absolute;
-	left: 25px;
-	top:18px;
-
+#slideRight input[name='radioSlide']:checked + label{
+	opacity: 1;
 }
-.coming{
-	font-size: 14px;
-	position: absolute;
-	left: 25px;
-	top:10px;
-	}
-.choose{
-	border: 1px solid black;
-	height: 20px;
-	width: 20px;
-	border-radius: 10px;
+#slideRight input[name='radioSlide'] ~ img{
+	opacity: 0;
+}
+#slideRight input[name='radioSlide']:checked + label + img{
+	opacity: 1;
 }

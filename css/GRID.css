@@ -1,10 +1,42 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-align: center;	
+}
 .layout{
 	display: grid;
-	grid-template-columns:10% 60% 20% 10%: 
 }
 .header{
-	grid-column:1/5;
+	grid-column:1/13;
+	height: 62px;
+	border: 1px solid red;
+	width: 100%;
+}
+.marginLeft{
+	grid-column: 1/2;
+	border: 1px solid red;
+	width: 100%;
+}
+.Lefter{
+	grid-column: 2/9;
+	border: 1px solid red;
+	width: 100%;
+	height: 500px;
+}
+.Righter{
+	grid-column: 9/12;
+	border: 1px solid red;
+	width: 100%;
+	height: 500px;
+}
+.marginRight{
+	grid-column: 12/13;
+	border: 1px solid red;
+	width: 100%;
 }
 .footer{
-	grid-column: 1/5;
+	grid-column: 1/13;
+	border: 1px solid red;
+	width: 100%;
 }
