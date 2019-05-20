@@ -1,38 +1,42 @@
-.out{
-	width: 840px;
-	border :1px solid red;
-	height: 430px;
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
 }
-#slideRight{
-	width: 842px;
+.slideRight{
+	width: 300px;
+	height: 425px;
 	position: relative;
-	padding-top: 341px;
+
 }
-#slideRight > img{
+.slideRight img{
 	position: absolute;
-	top:0px;
-	left:0px;
-}
-#slideRight label img{
-	width: :150px;
-	height: 70px;
-	display: block;
-}
-input[name='radioSlide']{
-	display: none;
-}
-#slideRight label{
-	margin: 18px 18px 0px 0px ;
-	float: left;
-	cursor: pointer;
-	opacity: .6;
-}
-#slideRight input[name='radioSlide']:checked + label{
-	opacity: 1;
-}
-#slideRight input[name='radioSlide'] ~ img{
+	top: 0px;
+	left: 0px;
 	opacity: 0;
 }
-#slideRight input[name='radioSlide']:checked + label + img{
+.slideRight .title{
+	position: absolute;
+    top: 300px;
+    height: 125px;
+    background-color: #af2ab3;
+    width: 300px;
+    padding: 25px 10px 38px 30px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.slideRight .title .nameSong{
+	font-size: 24px;
+}
+.slideRight input{
+	position: relative;
+	top:427px;
+	left: 235px;
+}
+.slideRight img:nth-child(1){
 	opacity: 1;
+}
+a{
+	text-decoration: none;
 }

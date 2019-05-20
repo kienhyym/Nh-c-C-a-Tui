@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/GRID.css">
 	<link rel="stylesheet" type="text/css" href="./css/MENU.css">
 	<link rel="stylesheet" type="text/css" href="./css/SLIDERIGHT.css">
+	<link rel="stylesheet" type="text/css" href="./css/SLIDE.css">
+	<link rel="stylesheet" type="text/css" href="./css/NGHEGIHOMNAY.css">
 	
 </head>
 <body>
@@ -75,72 +77,219 @@
 	</div>		
 <!-- ..................................... -->
 
-
-
-	<!-- MARGIN LEFT  -->	
-	<div class="marginLeft"></div>
-<!-- ..................................... -->
-
+<div class="main">
 
 
 	<!-- LEFTER -->
-	<div class="Lefter">
-		<div class="out">
-			<div id="slideRight">
-				
-			
-				<input type="radio" name="radioSlide" id="radioSlide1" value="1">
-				<label for="radioSlide1"><img src="./photo/slide1.jpg"></label>
-				<img src="./photo/slide1.jpg" class="picture">
-
-				<input type="radio" name="radioSlide" id="radioSlide2" value="2">
-				<label for="radioSlide2"><img src="./photo/slide2.jpg"></label>
-				<img src="./photo/slide2.jpg" class="picture">
-
-				<input type="radio" name="radioSlide" id="radioSlide3" value="3">
-				<label for="radioSlide3"><img src="./photo/slide3.jpg"></label>
-				<img src="./photo/slide3.jpg" class="picture">
-
-				<input type="radio" name="radioSlide" id="radioSlide4" value="4">
-				<label for="radioSlide4"><img src="./photo/slide4.jpg"></label>
-				<img src="./photo/slide4.jpg" class="picture">
-
+	<div class="Lefter block1">
+		<div class="slides-main">
+			<div class="large-image">
+				<img src="./photo/slide1.jpg" alt="" class="slide-main">
+				<img src="./photo/slide2.jpg" alt="" class="slide-main">
+				<img src="./photo/slide3.jpg" alt="" class="slide-main">
+				<img src="./photo/slide4.jpg" alt="" class="slide-main">
+				<img src="./photo/slide5.jpg" alt="" class="slide-main">
+			</div>
+			<div class="dot-image">
+				<img src="./photo/slide1.jpg" alt="" class="dot" id="1">
+				<img src="./photo/slide2.jpg" alt="" class="dot" id="2">
+				<img src="./photo/slide3.jpg" alt="" class="dot" id="3">
+				<img src="./photo/slide4.jpg" alt="" class="dot" id="4">
+				<img src="./photo/slide5.jpg" alt="" class="dot" id="5">
+			</div>
+			<div class="around-main">
+				<label class="around" ></label>
+				<label class="around" ></label>
+				<label class="around" ></label>
+				<label class="around" ></label>
+				<label class="around" ></label>
 			</div>
 		</div>
-			<script type="text/javascript">
-			
-				var indexUp = 0;
-				 var slides = document.getElementsByTagName("input");
-					function showSlideRight(){	
-						
-						slides[indexUp].checked = true;
-
-						indexUp++;
-						if(indexUp >slides.length-1){
-							indexUp = 0;
-						}
-						
-						setTimeout(showSlideRight,2000);
-						
+		<script type="text/javascript">
+			let index = 0;
+			let largeImage = document.getElementsByClassName('slide-main');
+			let inline2 = document.getElementsByClassName('around');
+			let dotImage = document.getElementsByClassName('dot');
+			var kc = 7;
+			for(let i = 0; i <largeImage.length; i++ ){
+				inline2[i].addEventListener('mouseover',function(){
+					for(let i = 0; i < dotImage.length; i++){
+					largeImage[i].style.opacity = 0;
+					inline2[i].style.opacity = 0;
 					}
-				showSlideRight();
+					index = i;
+					largeImage[index].style.opacity = 1;
+					inline2[index].style.opacity = 1;
+				});
+			}
+
+			setInterval(function(){
+
+				index++;
+				if(index == largeImage.length){
+					index = 0;
+				}
+				for(let i = 0; i < largeImage.length; i++){
+					largeImage[i].style.opacity = 0;
+					inline2[i].style.opacity = 0;
+				}
+				inline2[index].style.opacity = 1;
 				
-			</script>
-			</div>
+				largeImage[index].style.opacity =1;
+				
+			},10000)
+		</script>
+	</div>
 <!-- ..................................... -->	
 
 
 
 
 	<!-- RIGHTER -->
-	<div class="Righter"></div>
+	<div class="Righter block1">
+		<div class="slideRight">
+			<div class="large-slide">
+				<img src="https://avatar-nct.nixcdn.com/song/2019/05/17/9/0/5/2/1558080172625_300.jpg" class="picture">
+				<img src="https://avatar-nct.nixcdn.com/song/2019/05/14/b/c/e/e/1557806934674_300.jpg" class="picture">
+				<img src="https://avatar-nct.nixcdn.com/song/2019/05/14/b/c/e/e/1557813652137_300.jpg" class="picture">
+				<img src="https://avatar-nct.nixcdn.com/song/2019/05/14/b/c/e/e/1557807793940_300.jpg" class="picture">
+			</div>
+			<div class="title">
+				<p><a href="#">COMING SOON</a></p>
+				<p class="nameSong"><a href="#">Ngoặt</a></p>
+			</div>
+			<div class="title">
+				<p><a href="#">COMING SOON</a></p>
+				<p  class="nameSong"><a href="#">the one</a></p>
+			</div>
+			<div class="title">
+				<p><a href="#">COMING SOON</a></p>
+				<p  class="nameSong"><a href="#">Play it cool</a></p>
+			</div>
+			<div class="title">
+				<p><a href="#">COMING SOON</a></p>
+				<p  class="nameSong"><a href="#">healing</a></p>
+			</div >
+			<div class="radio-slide">
+				<input type="radio" name="radioSlide" id="radioSlide1" checked>
+				<input type="radio" name="radioSlide" id="radioSlide2">
+				<input type="radio" name="radioSlide" id="radioSlide3">		
+				<input type="radio" name="radioSlide" id="radioSlide4">
+			</div>
+		</div>
+		<script type="text/javascript">
+		
+			var index2 = 0;
+			let pic = document.getElementsByClassName('picture');
+			let node = document.getElementsByName('radioSlide');
+			let tit = document.getElementsByClassName('title');
+
+			for(let i = 0; i < node.length ; i++){
+				node[i].addEventListener('click',function(){
+					console.log(i);
+					for(let i = 0 ; i < pic.length ; i++){
+						pic[i].style.opacity = 0;
+					}
+					for(let i = 0 ; i < pic.length ; i++){
+						tit[i].style.opacity = 0;
+					}
+					index2 = i;
+					pic[i].style.opacity = 1;
+					tit[i].style.opacity = 1;
+				})
+			}
+
+			setInterval(function(){
+				index2 ++;
+				if(index2 == pic.length){
+					index2 = 0;
+				}
+				for(let i = 0 ; i < pic.length ; i++){
+					pic[i].style.opacity = 0;
+				}
+				for(let i = 0 ; i < pic.length ; i++){
+					tit[i].style.opacity = 0;
+				}
+				
+				pic[index2].style.opacity = 1;
+				tit[index2].style.opacity = 1;
+				node[index2].checked = true;
+
+			},3000);
+		</script>
+	</div>
 <!-- ..................................... -->	
 
 
+	<p style="text-align: left; font-size: 24px; margin: 15px 0px; color: #2daaed;" class="block1">NGHE GÌ HÔM NAY ></p>
+		<div class="DanhSach block1">
+			<div class="NgheGiHomNay">	
+				<div class="NGHN">
+					<div class="NGHN-gradient">
+						<i class="far fa-play-circle fa-2x"></i>
+				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
+					</div> 	
+				</div>
+				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
+			</div>
+			<div class="NgheGiHomNay">	
+				<div class="NGHN">
+					<div class="NGHN-gradient">
+						<i class="far fa-play-circle fa-2x"></i>
+				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
+					</div> 	
+				</div>
+				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
+			</div>
+			<div class="NgheGiHomNay">	
+				<div class="NGHN">
+					<div class="NGHN-gradient">
+						<i class="far fa-play-circle fa-2x"></i>
+				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
+					</div> 	
+				</div>
+				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
+			</div>
+			<div class="NgheGiHomNay">	
+				<div class="NGHN">
+					<div class="NGHN-gradient">
+						<i class="far fa-play-circle fa-2x"></i>
+				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
+					</div> 	
+				</div>
+				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
+			</div>
+			<div class="NgheGiHomNay">	
+				<div class="NGHN">
+					<div class="NGHN-gradient">
+						<i class="far fa-play-circle fa-2x"></i>
+				 		<div class="NGHN-view-count"><i class="fas fa-headphones-alt"></i>   2.291</div>
+					</div> 	
+				</div>
+				<div class="NGHN-tittle"><a href="#">Mưa Rơi Cuối Tuần</a></div>
+			</div>
+		</div>		
 
-	<!-- 	MARGIN RIGHT -->
-	<div class="marginRight"></div>
-<!-- ..................................... -->	
+
+
+
+
+
+
+
+</div><!-- main -->
+
+	
+	
+	
+
+
+
+
+
+
+
+
 
 
 

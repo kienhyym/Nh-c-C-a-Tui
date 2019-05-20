@@ -1,8 +1,10 @@
-.body{
+.DanhSach{
 	    font-family: 'NhacCuaTui',sans-serif;
+	   	margin: 0px;
 }
 .NgheGiHomNay{
 	width: 152px;
+	margin: 0px 9px;
 
 }
 .NGHN{

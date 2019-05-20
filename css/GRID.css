@@ -1,42 +1,22 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	text-align: center;	
-}
-.layout{
-	display: grid;
-}
-.header{
-	grid-column:1/13;
-	height: 62px;
-	border: 1px solid red;
-	width: 100%;
-}
-.marginLeft{
-	grid-column: 1/2;
-	border: 1px solid red;
-	width: 100%;
-}
-.Lefter{
-	grid-column: 2/9;
-	border: 1px solid red;
-	width: 100%;
-	height: 500px;
-}
-.Righter{
-	grid-column: 9/12;
-	border: 1px solid red;
-	width: 100%;
-	height: 500px;
-}
-.marginRight{
-	grid-column: 12/13;
-	border: 1px solid red;
-	width: 100%;
+.main{
+	width: 90%;
+	height: 1000px;
+	margin-left: 80px;
 }
 .footer{
-	grid-column: 1/13;
+	/*grid-column: 1/3;
 	border: 1px solid red;
-	width: 100%;
+	width: 100%;*/
+	clear: left;
+}
+.block1{
+	float: left;
+		margin: 40px  15px  15px 0px;
+
+}
+.DanhSach{
+	clear: left;
+}
+.Lefter{
+	height: 425px;
 }
