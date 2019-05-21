@@ -4,19 +4,18 @@
 	margin-left: 80px;
 }
 .footer{
-	/*grid-column: 1/3;
-	border: 1px solid red;
-	width: 100%;*/
 	clear: left;
 }
 .block1{
 	float: left;
-		margin: 40px  15px  15px 0px;
+	margin: 40px  15px  15px 0px;
 
-}
-.DanhSach{
-	clear: left;
 }
 .Lefter{
 	height: 425px;
+}
+
+.theme{
+	position: relative;
+	top: -42px;
 }

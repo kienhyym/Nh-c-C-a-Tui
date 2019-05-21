@@ -1,16 +1,25 @@
-.DanhSach{
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.DanhSach2{
 	    font-family: 'NhacCuaTui',sans-serif;
 	   	margin: 0px;
+	   	width: 839px;
+	   	height: 220px;
 }
 .NgheGiHomNay{
 	width: 152px;
-	margin: 0px 9px;
+	margin: 0px;
+	padding: 0px;
+	margin-right: 20px;
 
 }
 .NGHN{
 	width: 152px;
 	height: 152px;
-	background-image: url("https://loremflickr.com/152/152/dog");
+	background-image: url("https://avatar-nct.nixcdn.com/playlist/2019/04/08/9/f/8/4/1554690707905_300.jpg");
 	position: relative;	
 }
 .NGHN-view-count{
@@ -51,4 +60,8 @@
 }
 .NGHN-tittle a:hover{
 	color: #2daaed;
+}
+
+.list-HNNG2{
+	display: flex;
 }
