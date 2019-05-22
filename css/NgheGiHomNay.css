@@ -19,7 +19,7 @@
 .NGHN{
 	width: 152px;
 	height: 152px;
-	background-image: url("https://avatar-nct.nixcdn.com/playlist/2019/04/08/9/f/8/4/1554690707905_300.jpg");
+	background-image: url("https://nhac.vn/web/images/nghegi.png");
 	position: relative;	
 }
 .NGHN-view-count{
@@ -62,6 +62,9 @@
 	color: #2daaed;
 }
 
-.list-HNNG2{
+.DanhSach2 .list-HNNG2{
 	display: flex;
+}
+.NGHN-tittle{
+	margin: 10px 0px;
 }

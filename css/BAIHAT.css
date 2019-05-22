@@ -1,0 +1,55 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.BAIHAT{
+		width: 839px;
+		height: 500px;
+		margin: 0px;
+
+}
+.info-BAIHAT{
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	top: 14px;
+}
+.info-BAIHAT p:nth-child(1){
+	font-size: 14px;
+	margin: 0px 0px 3px 0px;
+}
+.info-BAIHAT p:nth-child(2){
+	font-size: 12px;
+	margin: 0px;
+    color: #a2a2a2;
+}
+.image-BAIHAT{
+	height: 60px;
+	width: 60px;
+	float: left;
+}
+
+.image-BAIHAT div img{
+	height: 60px;
+	width: 60px;
+	position: relative;
+	top: 2px;
+}
+.list-BAIHAT{
+	margin: 0px;
+	height: 71px;
+	width: 400px;
+	border-top: 1px solid #f3f3f3;
+	padding-top: 3px;
+	float: left;
+	margin-right: 18px;
+}
+.view-BAIHAT{
+	float: right;
+	line-height: 60px;
+}
+.info-BAIHAT p:hover{
+color: blue;
+}

@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+}
 .main{
 	width: 90%;
 	height: 1000px;
@@ -8,14 +11,32 @@
 }
 .block1{
 	float: left;
-	margin: 40px  15px  15px 0px;
+	margin: 40px  25px  15px 0px;
 
 }
 .Lefter{
 	height: 425px;
 }
-
 .theme{
+	float: right;
+}
+.BXH-BAIHAT{
 	position: relative;
-	top: -42px;
+	top: -110px;
+}
+.BAIHAT{
+	position: relative;
+	top: -50px;
+}
+.BXHMV{
+	position: relative;
+	top: -70px;
+	float: right;
+	right: 50px;
+}
+.NGHESIHOT{
+float: right;
+position: relative;
+top: -80px;
+right: 25px;
 }

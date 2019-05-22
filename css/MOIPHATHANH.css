@@ -1,0 +1,62 @@
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.MPH{
+	width: 840px;
+	height: 500px;
+	margin: 15px 0px;
+	box-sizing: border-box;
+}
+.info-MPH{
+	width: 152px;
+	margin-right: 20px;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 10px;
+	height: 217px;
+}
+.image-MPH{
+	background-image: url("https://avatar-nct.nixcdn.com/playlist/2018/09/07/6/0/e/e/1536301824724_500.jpg");
+	width: 152px;
+	height: 152px;
+	background-size: cover;
+	position: relative;
+}
+.gradient-MPH{
+	background: radial-gradient(circle, rgba(0,0,0,0.196516106442577) 0%, rgba(0,0,0,0.20211834733893552) 100%);
+	width: 152px;
+	height: 152px;
+	opacity: 0;
+	transition:all 0.5s;
+}
+.view-MPH{
+	position: absolute;
+	top: 0px;
+	left: 98px;
+	color: #c7c7c7;
+	font-size: 12px;
+	padding: 3px;
+	background: linear-gradient(83deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5074404761904762) 14%, rgba(0,0,0,0.5130427170868348) 100%);
+}
+.gradient-MPH:hover{
+	opacity: 1;
+}
+.gradient-MPH i{
+	position: absolute;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	height: 152px;
+	width: 152px;
+	color: white;
+	margin-right: 3px;
+	font-size
+}
+
+.ind-MPH p{
+	margin-top: 5px;
+}
