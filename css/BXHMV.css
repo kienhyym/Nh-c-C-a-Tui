@@ -87,6 +87,7 @@ a{
 }
 .country-BXHNV div:hover{
 	background-color: #e74c3c;
+	cursor: pointer;
 
 }
 

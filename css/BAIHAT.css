@@ -53,3 +53,14 @@ a{
 .info-BAIHAT p:hover{
 color: blue;
 }
+.listen-BAIHAT{
+	float: right;
+	display: none;
+	line-height: 60px;
+}
+.list-BAIHAT:hover .view-BAIHAT{
+	display: none;
+}
+.list-BAIHAT:hover .listen-BAIHAT{
+	display:block;
+}

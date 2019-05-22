@@ -22,6 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/GIAITRI.css">
 	<link rel="stylesheet" type="text/css" href="./css/BXHMV.css">
 	<link rel="stylesheet" type="text/css" href="./css/NGHESIHOT.css">
+
+
 	
 </head>
 <body>
@@ -531,9 +533,9 @@
 				<p style="text-align: left; font-size: 24px; margin: 15px 0px; color: #2daaed;" >BXH BÀI HÁT <i class="far fa-play-circle "></i></p>
 			</div>
 			<div class="country-BXH">
-				<div style="border-radius: 20px 0px 0px 20px"><a href="#">Việt Nam</a></div>
-				<div><a href="#">Âu Mỹ</a></div>
-				<div style="border-radius: 0px 20px 20px 0px"><a href="#" >Hàn Quốc</a></div>
+				<div style="border-radius: 20px 0px 0px 20px;" class="contryside"><!-- <a href="#"> -->Việt Nam<!-- </a> --></div>
+				<div class="contryside"><!-- <a href="#"> -->Âu Mỹ<!-- </a> --></div>
+				<div style="border-radius: 0px 20px 20px 0px" class="contryside"><!-- <a href="#" > -->Hàn Quốc<!-- </a> --></div>
 			</div>
 
 			<div class="list-HNNG1">
@@ -630,6 +632,20 @@
 			</div>
 
 		</div><!-- HET BXH BAI HAT -->
+<script type="text/javascript">
+		let contrySide = document.getElementsByClassName("contryside");
+
+			for(let i = 0; i < contrySide.length; i++){
+				contrySide[0].style.backgroundColor= "#e74c3c";
+				contrySide[i].addEventListener('click',function(){
+					for(let i = 0; i < contrySide.length; i++){
+			 	contrySide[i].style.backgroundColor= "#e5e5e5";
+			 }
+				this.style.backgroundColor= "#e74c3c";
+				console.log(1);
+			});
+			}
+</script>
 <!-- .................................................... -->
 <!-- BAI HAT -->
 	<div class="BAIHAT block1">
@@ -645,6 +661,19 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
+			</div>
+
+			<div class="list-BAIHAT">
+				<div class="image-BAIHAT">
+					<div><img src="https://avatar-nct.nixcdn.com/song/2019/05/14/b/c/e/e/1557830322655.jpg"></div>
+				</div>
+				<div class="info-BAIHAT">
+					<p>Em Trông Mong Điều Gì</p>
+					<p>Binz,Touliver</p>
+				</div>	
+				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i> 2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -656,6 +685,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -667,6 +697,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -678,6 +709,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -689,6 +721,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -700,6 +733,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -711,6 +745,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -722,6 +757,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -733,6 +769,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -744,6 +781,7 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 
 			<div class="list-BAIHAT">
@@ -755,19 +793,11 @@
 					<p>Binz,Touliver</p>
 				</div>	
 				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
-			</div>
-
-			<div class="list-BAIHAT">
-				<div class="image-BAIHAT">
-					<div><img src="https://avatar-nct.nixcdn.com/song/2019/05/14/b/c/e/e/1557830322655.jpg"></div>
-				</div>
-				<div class="info-BAIHAT">
-					<p>Em Trông Mong Điều Gì</p>
-					<p>Binz,Touliver</p>
-				</div>	
-				<div class="view-BAIHAT"><i class="fas fa-headphones-alt"></i>   2.291</div>
+				<div class="listen-BAIHAT"><i class="far fa-heart"></i> &nbsp; &nbsp;<i class="fas fa-play"></i></div>
 			</div>
 		</div><!-- Het BAI HAT -->
+
+
 <!-- ...................................................... -->
 
 <!-- BXH MV -->
@@ -776,9 +806,9 @@
 				<p style="text-align: left; font-size: 24px; margin: 0px 0px; color: #2daaed;" >BXH MV <i class="far fa-play-circle "></i></p>
 			</div>
 			<div class="country-BXHNV">
-				<div style="border-radius: 20px 0px 0px 20px"><a href="#">Việt Nam</a></div>
-				<div><a href="#">Âu Mỹ</a></div>
-				<div style="border-radius: 0px 20px 20px 0px"><a href="#" >Hàn Quốc</a></div>
+				<div style="border-radius: 20px 0px 0px 20px" class="contryside2"><!-- <a href="#"> -->Việt Nam<!-- </a> --></div>
+				<div class="contryside2"><!-- <a href="#"> -->Âu Mỹ<!-- </a> --></div>
+				<div style="border-radius: 0px 20px 20px 0px" class="contryside2"><!-- <a href="#" > -->Hàn Quốc<!-- </a> --></div>
 			</div>
 
 
@@ -835,6 +865,21 @@
 		</div>
 
 	</div>	
+	<script type="text/javascript">
+			let contrySide2 = document.getElementsByClassName("contryside2");
+
+			for(let i = 0; i < contrySide2.length; i++){
+				contrySide2[0].style.backgroundColor= "#e74c3c";
+				contrySide2[i].addEventListener('click',function(){
+					for(let i = 0; i < contrySide2.length; i++){
+			 	contrySide2[i].style.backgroundColor= "#e5e5e5";
+			 }
+				this.style.backgroundColor= "#e74c3c";
+				console.log(1);
+			});
+			}
+
+	</script>
 <!-- ..................HET BXH MV............................ -->
 
 

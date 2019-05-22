@@ -8,6 +8,7 @@ body{
 /*style phan tren cua web*/
 .topWeb{
 	border-bottom: 1px solid #e2dada; 
+
 }
 /*Style nut  bai hat*/
 li{
@@ -51,7 +52,7 @@ li{
 	box-shadow: 0 0 3pt 2pt #efefef;
 	top: 49px;
 	display: none;
-
+	z-index: 1;
 }
 .menu-con-baihat-vietnam ul{
 	padding-left: 15px;
